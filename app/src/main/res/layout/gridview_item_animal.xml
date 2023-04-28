@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:layout_gravity="center"
+    android:clipChildren="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/overlay"
+            android:scaleType="centerCrop"
+            android:transitionName="iv_Picture"
+            app:shapeAppearanceOverlay="@style/image.Rounded.OverlaySmall"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.example.ilpp.controls.ButtonFav
+            android:id="@+id/btn_Fav"
+            style="@style/button.Fav"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="-10dp"
+            app:isFavored="false" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="Oliviaa"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hembra, 2 años" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_location_color" />
+
+            <TextView
+                android:id="@+id/tv_Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_vertical|center_vertical"
+                android:layout_weight="1"
+                android:text="N-II km 648,4 Mataró"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

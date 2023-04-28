@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "915824120292",
+    "project_id": "ilpp-f1aa4",
+    "storage_bucket": "ilpp-f1aa4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915824120292:android:a88296fba48bd32845f7f1",
+        "android_client_info": {
+          "package_name": "com.example.ilpp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915824120292-m5vgkfmgjfk7u37bdjm9vuljhi6bbsqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeU3YWh6LOhVB9TxwHezsIJWJNq6-Au6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915824120292-m5vgkfmgjfk7u37bdjm9vuljhi6bbsqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

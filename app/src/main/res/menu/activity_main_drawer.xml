@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_Favorites"
+            android:icon="@drawable/ic_fav_white"
+            android:title="@string/favorites" />
+        <item
+            android:id="@+id/nav_AdoptionAnimals"
+            android:icon="@drawable/ic_star"
+            android:title="@string/adoption_animals" />
+        <item
+            android:id="@+id/nav_MyAnimals"
+            android:icon="@drawable/ic_my_animals"
+            android:title="@string/my_animals" />
+        <item
+            android:id="@+id/nav_Calendar"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/calendar" />
+        <item
+            android:id="@+id/nav_AnimalInsert"
+            android:icon="@drawable/ic_add"
+            android:title="@string/insert_new" />
+
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_Logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/global.Section"
+    android:padding="0dp"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_Portada"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="100:42"
+        android:contentDescription="@string/animal_shelter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/start_image" />
+
+    <TextView
+        android:id="@+id/tv_ILP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_love_pets"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_Portada"
+        app:layout_constraintStart_toStartOf="@+id/iv_Portada"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Portada" />
+
+    <TextView
+        android:id="@+id/tv_Prote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/animal_shelter"
+        app:layout_constraintEnd_toEndOf="@+id/iv_Portada"
+        app:layout_constraintStart_toStartOf="@+id/iv_Portada"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ILP" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

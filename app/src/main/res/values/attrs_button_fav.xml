@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="ButtonFav">
+        <attr name="isFavored" format="boolean" />
+    </declare-styleable>
+</resources>

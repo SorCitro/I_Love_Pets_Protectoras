@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.portal.SignupActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout  style="@style/global.Section">
+        <ImageView
+            android:id="@+id/iv_Logo"
+            android:transitionName="iv_Logo"
+            android:contentDescription="@string/logo"
+            android:layout_marginBottom="@dimen/padding"
+            style="@style/portal.Logo" />
+
+        <TextView
+            android:id="@+id/tv_Title"
+            android:transitionName="tv_Title"
+            style="@style/portal.Text.Title"
+            android:text="@string/welcome"
+             />
+
+        <TextView
+            android:id="@+id/tv_Desc"
+            android:transitionName="tv_Desc"
+            style="@style/portal.Text"
+            android:text="@string/portal_sign_up" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/padding"
+            android:orientation="vertical">
+
+            <include layout="@layout/form_profile" />
+            <include layout="@layout/form_password" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/padding"
+                android:text="@string/register"
+                android:transitionName="btn_Main" />
+
+            <TextView
+                android:id="@+id/tv_ExistUser"
+                android:transitionName="tv_ExistUser"
+                style="@style/portal.Text"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/portal_already_account"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/padding"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

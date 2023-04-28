@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Selector de imagen -->
+
+    <com.example.ilpp.controls.ImageUploader
+        android:id="@+id/iu_Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Name -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:transitionName="tf_Name"
+        style="@style/form.Field.Layout"
+        android:hint="@string/name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Name"
+            android:inputType="textPersonName"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Categoría -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:transitionName="tf_Category"
+        style="@style/form.Field.Layout.ComboBox"
+        android:hint="@string/animal_category">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/et_Category"
+            android:inputType="textAutoComplete"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Fecha de nacimiento -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:transitionName="tf_Birthdate"
+        style="@style/form.Field.Layout"
+        android:hint="@string/birthdate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Birthdate"
+            android:inputType="date"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Género -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:transitionName="tf_Gender"
+        style="@style/form.Field.Layout"
+        android:hint="@string/gender">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Gender"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Raza -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:transitionName="tf_Breed"
+        style="@style/form.Field.Layout"
+        android:hint="@string/breed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Breed"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Peso -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:transitionName="tf_Weight"
+        style="@style/form.Field.Layout"
+        android:hint="@string/weight">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Weight"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Dirección -->
+
+    <include layout="@layout/form_address" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:transitionName="tf_Description"
+        style="@style/form.Field.Layout"
+        android:hint="@string/description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Description"
+            android:inputType="textMultiLine"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Planificación de paseos -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/portal.Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/allow" />
+
+            <CheckBox
+                android:id="@+id/cb_Walks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/walks" />
+
+            <CheckBox
+                android:id="@+id/cb_Hosting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hosting" />
+
+            <CheckBox
+                android:id="@+id/cb_Adoption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adoption" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                style="@style/portal.Text.Title"
+                android:text="Horarios de paseos" />
+
+            <!-- Franja horaria -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:transitionName="tf_StartTime"
+                    style="@style/form.Field.Layout"
+                    android:hint="Hora de inicio">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_StartTime"
+                        android:inputType="time"
+                        style="@style/form.Field.Edit" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="@dimen/padding"
+                    android:layout_height="match_parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:transitionName="tf_EndTime"
+                    style="@style/form.Field.Layout"
+                    android:hint="Hora de fin">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_EndTime"
+                        android:inputType="time"
+                        style="@style/form.Field.Edit" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="Días de la semana" />
+
+            <!-- Días de la semana -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <CheckBox android:id="@+id/cb_Day_Mon" android:text="@string/monday_short" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <CheckBox android:id="@+id/cb_Day_Tue" android:text="@string/tuesday_short" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <CheckBox android:id="@+id/cb_Day_Wed" android:text="@string/wednesday_short" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <CheckBox android:id="@+id/cb_Day_Thu" android:text="@string/thursday_short" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <CheckBox android:id="@+id/cb_Day_Fri" android:text="@string/friday_short" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <CheckBox android:id="@+id/cb_Day_Sat" android:text="@string/saturday_short" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <CheckBox android:id="@+id/cb_Day_Sun" android:text="@string/sunday_short" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/flow1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding"
+                    app:constraint_referenced_ids="cb_Day_Mon,cb_Day_Tue,cb_Day_Wed,cb_Day_Thu,cb_Day_Fri,cb_Day_Sat,cb_Day_Sun"
+                    app:flow_horizontalBias="0"
+                    app:flow_horizontalStyle="packed"
+                    app:flow_verticalBias="0"
+                    app:flow_wrapMode="chain"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

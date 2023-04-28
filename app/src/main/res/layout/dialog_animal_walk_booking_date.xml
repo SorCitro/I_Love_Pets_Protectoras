@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.panel.dialogs.AnimalWalkBookingDateDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.example.ilpp.controls.Calendar
+        android:layout_margin="@dimen/padding"
+        android:id="@+id/cc_Calendar"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content" />
+
+</ScrollView>

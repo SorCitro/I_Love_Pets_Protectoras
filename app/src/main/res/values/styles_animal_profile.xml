@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="animalProfile.Image" parent="">
+    </style>
+
+    <style name="animalProfile.Title" parent="">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="animalProfile.Description" parent="">
+        <item name="android:lineHeight" tools:targetApi="p">24sp</item>
+    </style>
+
+    <style name="animalProfile.Details.Box" parent="">
+        <item name="android:background">@drawable/shape_animal_profile_detail_box</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="animalProfile.Details.BaseText" parent="">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="animalProfile.Details.Title" parent="animalProfile.Details.BaseText">
+    </style>
+
+    <style name="animalProfile.Details.Value" parent="animalProfile.Details.BaseText">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

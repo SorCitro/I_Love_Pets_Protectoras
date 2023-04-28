@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Address -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_Address"
+        android:transitionName="tf_Address"
+        style="@style/form.Field.Layout"
+        android:hint="@string/address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Address"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- City & Postal code -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_City"
+            android:transitionName="tf_City"
+            style="@style/form.Field.Layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding"
+            android:hint="@string/city">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_City"
+                style="@style/form.Field.Edit" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_PostalCode"
+            android:transitionName="tf_PostalCode"
+            style="@style/form.Field.Layout"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/postal_code">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_PostalCode"
+                android:inputType="number"
+                style="@style/form.Field.Edit" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<resources>
+
+    <item name="padding" type="dimen">10dp</item>
+
+    <style name="global.Section" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">25dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="global.Link" parent="">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginBottom">@dimen/padding</item>
+    </style>
+
+    <!-- Portal -->
+
+    <style name="portal.Progress" parent="">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginVertical">60dp</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="portal.Logo" parent="">
+        <item name="android:layout_width">215dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/logo</item>
+    </style>
+
+    <style name="portal.Text" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="portal.Text.Title" parent="portal.Text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="portal.Text.Subtitle" parent="portal.Text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- Form -->
+
+    <style name="form.Field.Layout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/padding</item>
+    </style>
+
+    <style name="form.Field.Edit" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="form.Field.Layout.ComboBox" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/padding</item>
+    </style>
+
+    <!-- Panel -->
+
+    <style name="panel.Bar" parent="">
+        <item name="android:background">@color/bgColor</item>
+    </style>
+
+    <style name="panel.Content" parent="">
+        <item name="android:background">@color/bgColor</item>
+    </style>
+
+    <!-- Images -->
+
+    <style name="image.Rounded.Overlay" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="image.Rounded.OverlaySmall" parent="image.Rounded.Overlay">
+        <item name="cornerSize">5dp</item>
+    </style>
+
+    <style name="image.Circle.Overlay" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Buttons -->
+
+    <style name="button.Fav" parent="">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+    <style name="button.Icon" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:background">@drawable/drawable_button_icon</item>
+        <item name="android:layout_gravity">center</item>
+        <!--suppress AndroidDomInspection -->
+        <item name="backgroundTint" />
+    </style>
+
+    <style name="button.Icon.Fav" parent="button.Icon">
+        <item name="android:background">@drawable/drawable_button_icon_fav</item>
+    </style>
+
+    <style name="button.Icon.FavUndo" parent="button.Icon">
+        <item name="android:background">@drawable/drawable_button_icon_fav_undo</item>
+    </style>
+
+    <style name="button.Icon2" parent="button.Icon">
+        <item name="android:background">@drawable/drawable_button_icon2</item>
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+    </style>
+
+    <style name="button.Icon2.Phone" parent="button.Icon2">
+        <item name="android:background">@drawable/drawable_button_icon2_phone</item>
+    </style>
+
+    <style name="button.Icon2.Contact" parent="button.Icon2">
+        <item name="android:background">@drawable/drawable_button_icon2_contact</item>
+    </style>
+
+    <!-- Profile bar -->
+    <style name="profileBar.Text" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="profileBar.Text.Title" parent="profileBar.Text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="profileBar.Text.Title.Placeholder" parent="profileBar.Text">
+        <item name="android:background">@color/fgColor</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_marginVertical">2dp</item>
+    </style>
+
+    <!-- Calendar -->
+
+    <style name="calendar.Text" parent="">
+
+    </style>
+
+    <style name="calendar.Text.FreeDay" parent="calendar.Text">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="calendar.Text.Selected" parent="calendar.Text">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

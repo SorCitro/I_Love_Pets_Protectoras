@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Home">
+
+    <fragment
+        android:id="@+id/nav_Home"
+        android:name="com.example.ilpp.activities.panel.sections.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/act_ToAnimalProfile"
+            app:destination="@id/nav_AnimalProfile" />
+        <action
+            android:id="@+id/act_ToAnimalCategories"
+            app:destination="@id/nav_AnimalCategories" />
+        <action
+            android:id="@+id/act_ToAnimalCategory"
+            app:destination="@id/nav_AnimalCategory" />
+        <action
+            android:id="@+id/act_ToAnimalFavorites"
+            app:destination="@id/nav_AnimalFavorites" />
+        <action
+            android:id="@+id/act_ToMyAnimals"
+            app:destination="@id/nav_MyAnimals" />
+        <action
+            android:id="@+id/act_ToCalendar"
+            app:destination="@id/nav_Calendar" />
+        <action
+            android:id="@+id/act_ToAnimalInsert"
+            app:destination="@id/nav_AnimalInsert" />
+        <action
+            android:id="@+id/act_ToProfile"
+            app:destination="@id/nav_Profile" />
+        <action
+            android:id="@+id/act_ToAnimalShelterProfile"
+            app:destination="@id/nav_AnimalShelterProfile" />
+        <action
+            android:id="@+id/act_ToAdoptionAnimals"
+            app:destination="@id/nav_AdoptionAnimals" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_AnimalProfile"
+        android:name="com.example.ilpp.activities.panel.sections.AnimalProfileFragment"
+        android:label="@string/animal_profile"
+        tools:layout="@layout/fragment_animal_profile" >
+        <action
+            android:id="@+id/act_ToProfile"
+            app:destination="@id/nav_Profile" />
+        <action
+            android:id="@+id/act_ToAnimalShelterProfile"
+            app:destination="@id/nav_AnimalShelterProfile" />
+        <action
+            android:id="@+id/act_ToAnimalEdit"
+            app:destination="@id/nav_AnimalEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_AnimalCategories"
+        android:name="com.example.ilpp.activities.panel.sections.AnimalCategoriesFragment"
+        android:label="@string/animal_categories"
+        tools:layout="@layout/fragment_animal_categories" >
+        <action
+            android:id="@+id/act_ToAnimalCategory"
+            app:destination="@id/nav_AnimalCategory" />
+        <action
+            android:id="@+id/act_ToProfile"
+            app:destination="@id/nav_Profile" />
+        <action
+            android:id="@+id/act_ToAnimalShelterProfile"
+            app:destination="@id/nav_AnimalShelterProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_AnimalCategory"
+        android:name="com.example.ilpp.activities.panel.sections.AnimalCategoryFragment"
+        android:label="@string/animal_categories">
+        <action
+            android:id="@+id/act_ToAnimalProfile"
+            app:destination="@id/nav_AnimalProfile" />
+        <action
+            android:id="@+id/act_ToProfile"
+            app:destination="@id/nav_Profile" />
+        <action
+            android:id="@+id/act_ToAnimalShelterProfile"
+            app:destination="@id/nav_AnimalShelterProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_AnimalFavorites"
+        android:name="com.example.ilpp.activities.panel.sections.AnimalFavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_animal_favorites" >
+        <action
+            android:id="@+id/act_ToAnimalProfile"
+            app:destination="@id/nav_AnimalProfile" />
+        <action
+            android:id="@+id/act_ToProfile"
+            app:destination="@id/nav_Profile" />
+        <action
+            android:id="@+id/act_ToAnimalShelterProfile"
+            app:destination="@id/nav_AnimalShelterProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_MyAnimals"
+        android:name="com.example.ilpp.activities.panel.sections.MyAnimalsFragment"
+        android:label="@string/my_animals"
+        tools:layout="@layout/fragment_my_animals" >
+        <action
+            android:id="@+id/act_ToAnimalProfile"
+            app:destination="@id/nav_AnimalProfile" />
+        <action
+            android:id="@+id/act_ToCalendar"
+            app:destination="@id/nav_Calendar" />
+        <action
+            android:id="@+id/act_ToAnimalInsert"
+            app:destination="@id/nav_AnimalInsert" />
+        <action
+            android:id="@+id/act_ToProfile"
+            app:destination="@id/nav_Profile" />
+        <action
+            android:id="@+id/act_ToAnimalShelterProfile"
+            app:destination="@id/nav_AnimalShelterProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Calendar"
+        android:name="com.example.ilpp.activities.panel.sections.CalendarFragment"
+        android:label="CalendarFragment" >
+        <action
+            android:id="@+id/act_ToProfile"
+            app:destination="@id/nav_Profile" />
+        <action
+            android:id="@+id/act_ToAnimalShelterProfile"
+            app:destination="@id/nav_AnimalShelterProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_AnimalInsert"
+        android:name="com.example.ilpp.activities.panel.sections.AnimalInsertFragment"
+        android:label="fragment_animal_insert"
+        tools:layout="@layout/fragment_animal_insert" >
+        <action
+            android:id="@+id/act_ToMyAnimals"
+            app:destination="@id/nav_MyAnimals" />
+        <action
+            android:id="@+id/act_ToProfile"
+            app:destination="@id/nav_Profile" />
+        <action
+            android:id="@+id/act_ToAnimalShelterProfile"
+            app:destination="@id/nav_AnimalShelterProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_AnimalShelterProfile"
+        android:name="com.example.ilpp.activities.panel.sections.AnimalShelterProfileFragment"
+        android:label="fragment_animal_shelter_profile"
+        tools:layout="@layout/fragment_animal_shelter_profile" >
+        <action
+            android:id="@+id/act_ToHome"
+            app:destination="@id/nav_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Profile"
+        android:name="com.example.ilpp.activities.panel.sections.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/act_ToHome"
+            app:destination="@id/nav_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_AdoptionAnimals"
+        android:name="com.example.ilpp.activities.panel.sections.AdoptionAnimalsFragment"
+        android:label="@string/adoption_animals"
+        tools:layout="@layout/fragment_adoption_animals" >
+        <action
+            android:id="@+id/act_ToAnimalShelterProfile"
+            app:destination="@id/nav_AnimalShelterProfile" />
+        <action
+            android:id="@+id/act_ToAnimalProfile"
+            app:destination="@id/nav_AnimalProfile" />
+        <action
+            android:id="@+id/act_ToProfile"
+            app:destination="@id/nav_Profile" />
+        <action
+            android:id="@+id/act_ToAnimalInsert"
+            app:destination="@id/nav_AnimalInsert" />
+        <action
+            android:id="@+id/act_ToCalendar"
+            app:destination="@id/nav_Calendar" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_AnimalEdit"
+        android:name="com.example.ilpp.activities.panel.sections.AnimalEditFragment"
+        android:label="AnimalEditFragment" >
+        <action
+            android:id="@+id/act_ToAnimalProfile"
+            app:destination="@id/nav_AnimalProfile" />
+    </fragment>
+
+</navigation>

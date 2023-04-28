@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.ilpp.controls.ButtonFav
+        android:id="@+id/btn_Fav3"
+        style="@style/button.Icon.Fav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFavored="true" />
+</FrameLayout>

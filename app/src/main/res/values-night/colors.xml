@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="overlay">#090909</color>
+    <color name="bgColor">@color/black</color>
+    <color name="fgColor">@color/white</color>
+    <color name="overcolor">#44FFFFFF</color>
+</resources>

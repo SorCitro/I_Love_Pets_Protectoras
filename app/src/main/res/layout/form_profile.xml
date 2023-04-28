@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.example.ilpp.controls.ImageUploader
+        android:id="@+id/iu_ProfilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <!-- Name -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_Name"
+        android:transitionName="tf_Name"
+        style="@style/form.Field.Layout"
+        android:hint="@string/name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Name"
+            android:inputType="textPersonName"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Surname -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_Surname"
+        android:transitionName="tf_Surname"
+        style="@style/form.Field.Layout"
+        android:hint="@string/surname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Surname"
+            style="@style/form.Field.Edit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_Email"
+        android:transitionName="tf_Email"
+        style="@style/form.Field.Layout"
+        android:hint="@string/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/form.Field.Edit"
+            android:inputType="textEmailAddress"
+            android:id="@+id/et_Email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".activities.panel.dialogs.AnimalWalkBookingDialog"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_Title"
+            style="@style/portal.Text.Title"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/animal_walk_booking_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_Date"
+            style="@style/form.Field.Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:hint="Fecha del paseo"
+            app:endIconDrawable="@drawable/ic_calendar"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_Date"
+                style="@style/form.Field.Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="false"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Details"
+            android:layout_marginVertical="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView android:text="@string/walk_details" style="@style/portal.Text.Subtitle" />
+
+            <TableLayout
+                android:id="@+id/tl_Details"
+                android:layout_width="match_parent"
+                android:padding="@dimen/padding"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView android:text="@string/date_label" android:layout_gravity="right" android:layout_marginRight="@dimen/padding" />
+                    <TextView
+                        android:id="@+id/tv_Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="01/02/2023" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="@string/schedule_label" android:layout_gravity="right" android:layout_marginRight="@dimen/padding" />
+                    <TextView
+                        android:id="@+id/tv_Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="de 5:00 a 12:00" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:layout_marginVertical="@dimen/padding"
+                android:id="@+id/btn_Book"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reservar paseo" />
+
+            <TextView
+                android:id="@+id/tv_AlreadyBooked"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="40dp"
+                android:layout_height="wrap_content"
+                android:text="@string/already_booked"
+                android:textSize="12sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
